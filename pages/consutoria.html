@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim das Pitayas - Consultoria</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../CSS/principal.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg nav-custom fixed-top shadow-sm py-3 transition-all scrolled" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" src="../Imagens/fotos-site/logo.png" alt="Jardim das Pitayas Logo">
+            </a>
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-white fs-3"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-4 text-center mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold hover-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold hover-link" href="hospedagem.html">Hospedagem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold hover-link" href="turismo.html">Turismo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold active" href="consutoria.html">Consultoria</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero-section-page d-flex align-items-center justify-content-center text-center text-white position-relative" data-aos="fade-in" style="background: url('https://images.unsplash.com/photo-1592395159048-ed61a1debdce?auto=format&fit=crop&q=80&w=1200') center/cover; min-height: 40vh; margin-top: 80px;">
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(26,42,26,0.85);"></div>
+        <div class="container position-relative z-index-1 mt-5">
+            <h1 class="display-4 fw-bold mb-3 drop-shadow text-white"><span class="text-highlight">Consultoria</span> Especializada</h1>
+            <p class="lead fw-light fs-5 drop-shadow px-md-5">Transforme sua terra em um negócio altamente rentável. Te ensinamos do zero ao primeiro cacho de pitayas.</p>
+        </div>
+    </header>
+
+    <!-- Content Sections -->
+    <main class="flex-grow-1 border-top border-white border-opacity-10" style="background-color: var(--color-bg);">
+        <div class="container py-5 mt-4">
+            
+            <!-- Introdução -->
+            <section class="row align-items-center mb-5 pb-5 border-bottom border-white border-opacity-10" data-aos="fade-up">
+                <div class="col-lg-7 pe-lg-5 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-4 section-title text-white">Tem interesse em Plantar? Pois você está no lugar certo!</h2>
+                    <p class="text-white-50 fs-5 mb-3 lh-lg">Você sabia que a pitaya é considerada uma das frutas mais rentáveis para cultivo no Brasil? Em condições ideais, um hectare pode gerar até R$ 100 mil por ano, tornando-se uma excelente opção para produtores que buscam alto retorno financeiro.</p>
+                    <p class="text-white-50 fs-5 mb-3 lh-lg">Segundo especialistas, a rentabilidade da pitaya pode variar conforme o manejo. A planta começa a produzir no primeiro ano, com estabilização na casa das 20 toneladas por hectare no quarto ano.</p>
+                    
+                    <button class="btn btn-premium btn-lg rounded-pill px-5 py-3 fw-bold mt-4 shadow-lg pulse-animation" data-bs-toggle="modal" data-bs-target="#consultoriaModal">
+                        <i class="fa-solid fa-seedling me-2"></i> Quero Consultoria
+                    </button>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card card-glass border-0 p-4 rounded-4 shadow-lg">
+                        <h3 class="fw-bold mb-4 text-center text-white"><i class="fa-solid fa-list-check me-2 text-accent"></i> Preço das Mudas</h3>
+                        <div class="table-responsive">
+                            <table class="table table-custom mb-0 text-center align-middle">
+                                <thead>
+                                    <tr>
+                                        <th class="py-3">Espécie</th>
+                                        <th class="py-3">Tamanho</th>
+                                        <th class="py-3">Valor (Un)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-semibold">Vietnamense White</td>
+                                        <td>40cm</td>
+                                        <td class="text-success fw-bold">R$ 12,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-semibold">Boreal Red</td>
+                                        <td>40cm</td>
+                                        <td class="text-success fw-bold">R$ 15,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-semibold">Palora do Equador</td>
+                                        <td>40cm</td>
+                                        <td class="text-success fw-bold">R$ 18,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-semibold">Amazona Peruana</td>
+                                        <td>40cm</td>
+                                        <td class="text-success fw-bold">R$ 22,00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projetos de Sucesso -->
+            <section class="mb-5 pb-5">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-6 fw-bold section-title text-white">Projetos de Sucesso</h2>
+                    <p class="text-white-50 fs-5 mt-3">Algumas das produções que ajudamos a criar e que já estão gerando frutos.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card card-glass overflow-hidden rounded-4 h-100 group">
+                            <div style="height: 300px; overflow: hidden;">
+                                <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&q=80&w=800" class="img-fluid w-100 h-100 object-fit-cover hover-scale" alt="Projeto 1">
+                            </div>
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold text-white mb-2">Fazenda Bela Vista</h4>
+                                <p class="text-white-50 mb-0">Implementação de 2 hectares de Palora do Equador. Produção iniciada em meses com alta taxa de acerto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card card-glass overflow-hidden rounded-4 h-100 group">
+                            <div style="height: 300px; overflow: hidden;">
+                                <img src="https://images.unsplash.com/photo-1596781258602-5ea5be783d4f?auto=format&fit=crop&q=80&w=800" class="img-fluid w-100 h-100 object-fit-cover hover-scale" alt="Projeto 2">
+                            </div>
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold text-white mb-2">Sítio Pitaya de Ouro</h4>
+                                <p class="text-white-50 mb-0">Revitalização de solo e troca de cultivo. Hoje o sítio é referência local em Boreal Red.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Modal Form (Contact Choice) -->
+    <div class="modal fade" id="consultoriaModal" tabindex="-1" aria-labelledby="consultoriaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0" style="background: rgba(30, 45, 30, 0.95); backdrop-filter: blur(15px);">
+                <div class="modal-header border-white border-opacity-10">
+                    <h5 class="modal-title fw-bold text-white" id="consultoriaModalLabel">Solicitar Consultoria</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4 text-center">
+                    <p class="text-white-50 mb-4">Estamos prontos para entender seu projeto e traçar a melhor estratégia de plantio. Como quer falar com nosso especialista?</p>
+                    <div class="d-grid gap-3">
+                        <a href="https://wa.me/5599999999999" target="_blank" class="btn btn-success btn-lg rounded-pill fw-bold shadow">
+                            <i class="fa-brands fa-whatsapp fs-4 me-2 align-middle"></i> Nosso WhatsApp
+                        </a>
+                        <a href="mailto:contato@jardimdaspitayas.com.br" class="btn btn-outline-light btn-lg rounded-pill fw-bold bg-glass">
+                            <i class="fa-regular fa-envelope fs-4 me-2 align-middle"></i> Enviar E-mail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-custom mt-auto pt-5 pb-4 border-top">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-start">
+                    <img src="../Imagens/fotos-site/logo.png" alt="Logo" style="height: 80px;">
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="mb-0 text-white-50 small">&copy; 2025 Jardim das Pitayas. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="https://instagram.com/jardimdaspitayas" target="_blank" class="social-icon bg-white bg-opacity-10 text-white rounded-circle d-flex align-items-center justify-content-center transition-all hover-scale" style="width: 45px; height: 45px;">
+                        <i class="fa-brands fa-instagram fs-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800
+        });
+        
+        // Handle navbar scroll effect manually
+        window.addEventListener('scroll', function() {
+            var nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                // nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+    <script src="../JS/arquivo.js"></script>
+</body>
+</html>

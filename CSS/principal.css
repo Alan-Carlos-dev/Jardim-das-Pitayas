@@ -1,0 +1,261 @@
+/* CSS Modernizado - Jardim das Pitayas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap');
+
+:root {
+    --color-bg: #1a2a1a;
+    --color-primary: #558C48;
+    --color-secondary: #83AC4C;
+    --color-accent: #D93654;
+    --color-text: #e9ecef;
+    --font-heading: 'Outfit', 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: var(--font-heading);
+}
+
+.text-accent {
+    color: var(--color-accent) !important;
+}
+.bg-accent {
+    background-color: var(--color-accent) !important;
+}
+
+/* Navbar */
+.nav-custom {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.nav-custom.scrolled {
+    background: rgba(40, 65, 40, 0.95);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.transition-all {
+    transition: all 0.3s ease;
+}
+.hover-link {
+    position: relative;
+}
+.hover-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+.nav-link:hover.hover-link::after,
+.nav-link.active::after {
+    width: 80%;
+}
+#logo {
+    max-height: 60px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+}
+#logo:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    background: url('../Imagens/fotos-site/pergolado.png') center/cover fixed;
+    background-color: var(--color-bg);
+}
+.hero-section-page {
+    min-height: 50vh;
+    background-color: var(--color-bg);
+}
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(26,42,26,0.92) 0%, rgba(85,140,72,0.6) 100%);
+}
+.text-highlight {
+    color: var(--color-accent);
+    text-shadow: 0 0 20px rgba(217, 54, 84, 0.3);
+}
+.drop-shadow {
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.tag-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/* Buttons */
+.btn-premium {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-premium:hover {
+    background-color: #f74567;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(217, 54, 84, 0.4) !important;
+}
+.btn-premium-airbnb {
+    background-color: #FF5A5F;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-premium-airbnb:hover {
+    background-color: #ff3b40;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 90, 95, 0.4) !important;
+}
+.bg-glass {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+.btn-outline-light:hover.bg-glass {
+    background: white;
+    color: var(--color-bg);
+}
+.btn-accent {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+}
+.btn-accent:hover {
+    background-color: #f74567;
+    color: white;
+}
+.btn-outline-accent {
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent) !important;
+}
+.btn-outline-accent:hover {
+    background-color: var(--color-accent);
+    color: white !important;
+}
+
+/* Decorative Utils */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-accent);
+    border-radius: 2px;
+}
+.z-index-1 {
+    z-index: 1;
+}
+
+/* Social Cards */
+.social-overlay {
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+.social-card {
+    transition: transform 0.4s ease;
+}
+.social-card:hover {
+    transform: translateY(-10px);
+}
+.social-card:hover .social-overlay {
+    opacity: 1;
+}
+.social-card img {
+    transition: transform 0.6s ease;
+}
+.social-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Hover Utils */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+    transform: scale(1.2);
+}
+
+/* Footer */
+.footer-custom {
+    background-color: #121c12;
+}
+
+/* Cards (Hospedagem & Consultoria) */
+.card-glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+.card-glass:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    border-color: var(--color-accent);
+    transform: translateY(-5px);
+}
+.form-glass {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-text);
+}
+.form-glass:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-accent);
+    color: var(--color-text);
+    box-shadow: 0 0 0 0.25rem rgba(217, 54, 84, 0.25);
+}
+
+/* Modals */
+.modal-content {
+    background-color: var(--color-bg);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--color-text);
+}
+.modal-header {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.modal-footer {
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Tables */
+.table-custom {
+    color: var(--color-text);
+    background-color: transparent;
+}
+.table-custom th {
+    background-color: rgba(255,255,255,0.05) !important;
+    color: var(--color-text) !important;
+    border-bottom: 2px solid var(--color-accent) !important;
+}
+.table-custom td {
+    background-color: transparent !important;
+    color: rgba(255,255,255,0.8) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+}
+.table-custom tbody tr:hover td {
+    background-color: rgba(217, 54, 84, 0.1) !important;
+    color: white !important;
+}
