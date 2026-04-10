@@ -43,16 +43,47 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 @media (max-width: 991.98px) {
     .nav-custom {
-        background: rgba(26, 42, 26, 0.95);
+        background: rgba(26, 42, 26, 0.98) !important;
         backdrop-filter: blur(10px);
     }
     .navbar-collapse {
-        background: rgba(40, 65, 40, 0.5);
-        padding: 1rem;
-        border-radius: 10px;
-        margin-top: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        position: fixed;
+        top: 90px;
+        left: 5%;
+        width: 90%;
+        background: rgba(40, 65, 40, 0.95);
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+        padding: 2.5rem 1rem;
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.2);
+        box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+        z-index: 1050;
     }
+    
+    .navbar-collapse.show {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: floatInMenu 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+    
+    .navbar-collapse.show .nav-item {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar-collapse.show .nav-link {
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+    }
+}
+
+@keyframes floatInMenu {
+    0% { transform: translateY(-30px) scale(0.95); opacity: 0; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
 }
 .transition-all {
     transition: all 0.3s ease;
