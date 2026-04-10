@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
         backdrop-filter: blur(10px);
     }
     .navbar-collapse {
+        display: none;
         position: fixed;
         top: 90px;
         left: 5%;
